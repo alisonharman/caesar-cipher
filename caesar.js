@@ -6,6 +6,9 @@ const shiftCharacter = function(plaintext, key) {
       return plaintext;
     }
 
+    // ensure letter is lowerCase as algorithm only works with lowerCase
+    plaintext = plaintext.toLowerCase();
+
     // need to check if key and letter will take it outside the range of the lower-case unicode alphabet
     let index = plaintext.charCodeAt(0);
     let newIndex = index + key;

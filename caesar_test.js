@@ -16,7 +16,7 @@ describe("caesar.encrypt", () => {
     assert.equal(encrypt("hello", -3), "ebiil");
   });
 
-  it('encrypts a sentence "hello world" => "mjqqt btwqi", skips spaces (right shift of 5)', () => {
-    assert.equal(encrypt("hello world", 5), "mjqqt btwqi");
+  it('encrypts a sentence "hello World" => "mjqqt btwqi", skips spaces (right shift of 5)', () => {
+    assert.equal(encrypt("hello World", 5), "mjqqt btwqi");
   });
 });
